@@ -1,0 +1,19 @@
+{
+  "panels": {
+    "9c0a6a04": {
+      "label": "Dev Panel",
+      "tier": 1,
+      "createdAt": "2026-04-15"
+    },
+    "fd8210ca": {
+      "label": "Manager",
+      "tier": 2,
+      "createdAt": "2026-04-15"
+    },
+    "eb51c3c8": {
+      "label": "Varshit",
+      "tier": 3,
+      "createdAt": "2026-04-15"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "password": "supercoolpassword",
+  "passwords": [
+    "supercoolpassword"
+  ],
+  "blocked": {},
+  "games": [
+    "backrooms",
+    "brawl-stars",
+    "clash-royale",
+    "drive-mad",
+    "eagle8",
+    "eaglercraft-1-12",
+    "escape-road-1",
+    "escape-road-2",
+    "escape-road-city",
+    "escape-road-city-2",
+    "gn-math",
+    "hexanaut",
+    "mr-mine",
+    "pokemon-showdown",
+    "smash-karts",
+    "solar-smash-proxy",
+    "tuffeagle12"
+  ],
+  "allowedIps": {
+    "146.75.164.216": {
+      "label": "Me"
+    },
+    "71.135.212.47": {
+      "label": "Me (ChromeBook -- Demdem)"
+    },
+    "192.150.244.11": {
+      "label": "Me (ChromeBook)"
+    }
+  },
+  "blockedIps": {},
+  "minFileVersion": 0
+}
