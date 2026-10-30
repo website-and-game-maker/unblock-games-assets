@@ -13,7 +13,11 @@ Technical Stuff/
 ├── ip-log.json            # Append-only IP access log written by the auth server
 ├── panel-registry.json    # Self-registered admin panel list
 └── config-pkg/            # npm package source (published as @pycoder42/ug-config for unpkg fallback)
+covers/                    # Game cover pictures, 640x360 WebP, one per catalog game id
 ```
+
+Covers are referenced from the games site catalog by commit-pinned jsDelivr URL:
+`https://cdn.jsdelivr.net/gh/website-and-game-maker/unblock-games-assets@<sha>/covers/<game-id>.webp`
 
 ## CDN endpoints
 
