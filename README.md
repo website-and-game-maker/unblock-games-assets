@@ -14,6 +14,7 @@ Technical Stuff/
 ├── panel-registry.json    # Self-registered admin panel list
 └── config-pkg/            # npm package source (published as @pycoder42/ug-config for unpkg fallback)
 covers/                    # Game cover pictures, 640x360 WebP, one per catalog game id
+games/<game-id>/index.html # Clean single-file launchers for games whose public copies carry junk or outside scripts
 ```
 
 Covers are referenced from the games site catalog by commit-pinned jsDelivr URL:
