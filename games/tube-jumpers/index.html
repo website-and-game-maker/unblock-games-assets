@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tube Jumpers</title>
+  <!--
+    Tube Jumpers by New Eich Games. Clean single-file launcher for the games
+    site: only the Unity build (pinned by commit on jsDelivr), no ads, no
+    trackers, no outside scripts.
+  -->
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #3ec7d1; }
+    #gameContainer { position: fixed; inset: 0; width: 100vw; height: 100vh; }
+    #gameContainer canvas { width: 100%; height: 100%; display: block; }
+    #bar { position: fixed; left: 50%; top: 50%; width: 240px; height: 10px; margin: -5px 0 0 -120px;
+           background: rgba(0,0,0,.25); border-radius: 5px; overflow: hidden; }
+    #bar > div { height: 100%; width: 0; background: #fff; transition: width .2s; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/Ven0mYT/tube-jumpers-ven0m@d7e473d1bbb19c421a23516ef2202bda21e8c3f0/js/UnityLoader.js"></script>
+</head>
+<body>
+  <div id="gameContainer"></div>
+  <div id="bar"><div></div></div>
+  <script>
+    var fill = document.querySelector('#bar > div');
+    var gameInstance = UnityLoader.instantiate(
+      'gameContainer',
+      'https://cdn.jsdelivr.net/gh/Ven0mYT/tube-jumpers-ven0m@d7e473d1bbb19c421a23516ef2202bda21e8c3f0/tube-jumpers.json',
+      {
+        onProgress: function (instance, progress) {
+          fill.style.width = Math.round(progress * 100) + '%';
+          if (progress >= 1) document.getElementById('bar').style.display = 'none';
+        }
+      }
+    );
+  </script>
+</body>
+</html>
